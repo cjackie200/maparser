@@ -96,30 +96,25 @@ update_mysql(Map) ->
     update_mysql(T).
 
 make_replace_mysql(Value) ->
-    try
     FieldValue = make_field_string(Value),
-    "REPLACE INTO map(row,col,terrain,scene,object)"++" VALUES"++FieldValue
-    catch
-        _:R ->
-            io:format("~p~n", [R]),
-        ""
-    end.
+    "REPLACE INTO map(row,col,terrain,scene,object)"++" VALUES"++FieldValue.
 
 
 make_field_string(Value) ->
-    make_field_string(Value, []).
+    Width = util:get_config(width) * util:get_config(map_mag),
+    make_field_string(Value, [], Width).
 
-make_field_string([], [_ | Res]) ->
+make_field_string([], [_ | Res], _Width) ->
     Res;
 
 make_field_string([{Pos, #buff{
     terrain = Terrain,
     scene = Scene,
     object = Object
-}} | T], Res) ->
-    Point = pos_to_RowCol(Pos),
-    make_field_string(T, ",("++Point++","++Terrain++","++Scene++","++Object++")"++Res).
+}} | T], Res, Width) ->
+    Point = pos_to_RowCol(Pos, Width),
+    NewRes = ",("++Point++","++Terrain++","++Scene++","++Object++")"++Res,
+    make_field_string(T, NewRes, Width).
 
-pos_to_RowCol(Pos) ->
-    Hight = util:get_config(height),
-    lists:concat([Pos rem Hight, ",", Pos div Hight]).
+pos_to_RowCol(Pos, Width) ->
+    lists:concat([Pos div Width, ",", Pos rem Width]).

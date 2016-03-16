@@ -233,7 +233,7 @@ parser_object(Fid) ->
 
 read_type(Fid) ->
     {ok, [$t, $y, $p, $e, $= | TypeStr]} = file:read_line(Fid),
-    str2number(TypeStr).
+    TypeStr --"\n".
 
 
 read_location(Fid) ->

@@ -8,9 +8,9 @@
 -define(ETS_BUFF, ets_buff).
 
 -record(buff, {
-    terrain = "-1",
-    scene = "-1",
-    object = "-1"
+    terrain = "0",
+    scene = "0",
+    object = "0"
     }).
 
 -endif.
