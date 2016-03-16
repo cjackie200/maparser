@@ -1,5 +1,0 @@
-
-=INFO REPORT==== 15-Mar-2016::15:15:34 ===
-    application: maparser
-    exited: {bad_return,{{map_logger_app,start,[normal,[]]},ok}}
-    type: temporary
