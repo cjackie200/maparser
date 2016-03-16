@@ -1,0 +1,108 @@
+
+=ERROR REPORT==== 15-Mar-2016::16:28:28 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,'--',[56,"\n"],[]},
+            {file_parser,parser_layer_terrain_line,2,
+                         [{file,"src/file_parser.erl"},{line,176}]},
+            {file_parser,parser_layer_terrain,3,
+                         [{file,"src/file_parser.erl"},{line,168}]},
+            {file_parser,parser_file,2,
+                         [{file,"src/file_parser.erl"},{line,79}]},
+            {file_parser,handle_info,2,
+                         [{file,"src/file_parser.erl"},{line,50}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::16:28:32 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,'--',[56,"\n"],[]},
+            {file_parser,parser_layer_terrain_line,2,
+                         [{file,"src/file_parser.erl"},{line,176}]},
+            {file_parser,parser_layer_terrain,3,
+                         [{file,"src/file_parser.erl"},{line,168}]},
+            {file_parser,parser_file,2,
+                         [{file,"src/file_parser.erl"},{line,79}]},
+            {file_parser,handle_info,2,
+                         [{file,"src/file_parser.erl"},{line,50}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::16:28:36 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,'--',[56,"\n"],[]},
+            {file_parser,parser_layer_terrain_line,2,
+                         [{file,"src/file_parser.erl"},{line,176}]},
+            {file_parser,parser_layer_terrain,3,
+                         [{file,"src/file_parser.erl"},{line,168}]},
+            {file_parser,parser_file,2,
+                         [{file,"src/file_parser.erl"},{line,79}]},
+            {file_parser,handle_info,2,
+                         [{file,"src/file_parser.erl"},{line,50}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::16:28:39 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,'--',[56,"\n"],[]},
+            {file_parser,parser_layer_terrain_line,2,
+                         [{file,"src/file_parser.erl"},{line,176}]},
+            {file_parser,parser_layer_terrain,3,
+                         [{file,"src/file_parser.erl"},{line,168}]},
+            {file_parser,parser_file,2,
+                         [{file,"src/file_parser.erl"},{line,79}]},
+            {file_parser,handle_info,2,
+                         [{file,"src/file_parser.erl"},{line,50}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::16:28:43 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,'--',[56,"\n"],[]},
+            {file_parser,parser_layer_terrain_line,2,
+                         [{file,"src/file_parser.erl"},{line,176}]},
+            {file_parser,parser_layer_terrain,3,
+                         [{file,"src/file_parser.erl"},{line,168}]},
+            {file_parser,parser_file,2,
+                         [{file,"src/file_parser.erl"},{line,79}]},
+            {file_parser,handle_info,2,
+                         [{file,"src/file_parser.erl"},{line,50}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::16:28:47 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarg,[{erlang,'--',[56,"\n"],[]},
+            {file_parser,parser_layer_terrain_line,2,
+                         [{file,"src/file_parser.erl"},{line,176}]},
+            {file_parser,parser_layer_terrain,3,
+                         [{file,"src/file_parser.erl"},{line,168}]},
+            {file_parser,parser_file,2,
+                         [{file,"src/file_parser.erl"},{line,79}]},
+            {file_parser,handle_info,2,
+                         [{file,"src/file_parser.erl"},{line,50}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

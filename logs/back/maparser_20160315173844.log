@@ -1,0 +1,125 @@
+
+=ERROR REPORT==== 15-Mar-2016::17:38:46 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarith,[{file_parser,update_object,3,
+                           [{file,"src/file_parser.erl"},{line,259}]},
+              {file_parser,range_object,6,
+                           [{file,"src/file_parser.erl"},{line,253}]},
+              {file_parser,parser_object,1,
+                           [{file,"src/file_parser.erl"},{line,231}]},
+              {file_parser,parser_file,2,
+                           [{file,"src/file_parser.erl"},{line,79}]},
+              {file_parser,handle_info,2,
+                           [{file,"src/file_parser.erl"},{line,50}]},
+              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+              {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+              {proc_lib,init_p_do_apply,3,
+                        [{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::17:38:46 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarith,[{file_parser,update_object,3,
+                           [{file,"src/file_parser.erl"},{line,259}]},
+              {file_parser,range_object,6,
+                           [{file,"src/file_parser.erl"},{line,253}]},
+              {file_parser,parser_object,1,
+                           [{file,"src/file_parser.erl"},{line,231}]},
+              {file_parser,parser_file,2,
+                           [{file,"src/file_parser.erl"},{line,79}]},
+              {file_parser,handle_info,2,
+                           [{file,"src/file_parser.erl"},{line,50}]},
+              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+              {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+              {proc_lib,init_p_do_apply,3,
+                        [{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::17:38:46 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarith,[{file_parser,update_object,3,
+                           [{file,"src/file_parser.erl"},{line,259}]},
+              {file_parser,range_object,6,
+                           [{file,"src/file_parser.erl"},{line,253}]},
+              {file_parser,parser_object,1,
+                           [{file,"src/file_parser.erl"},{line,231}]},
+              {file_parser,parser_file,2,
+                           [{file,"src/file_parser.erl"},{line,79}]},
+              {file_parser,handle_info,2,
+                           [{file,"src/file_parser.erl"},{line,50}]},
+              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+              {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+              {proc_lib,init_p_do_apply,3,
+                        [{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::17:38:46 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarith,[{file_parser,update_object,3,
+                           [{file,"src/file_parser.erl"},{line,259}]},
+              {file_parser,range_object,6,
+                           [{file,"src/file_parser.erl"},{line,253}]},
+              {file_parser,parser_object,1,
+                           [{file,"src/file_parser.erl"},{line,231}]},
+              {file_parser,parser_file,2,
+                           [{file,"src/file_parser.erl"},{line,79}]},
+              {file_parser,handle_info,2,
+                           [{file,"src/file_parser.erl"},{line,50}]},
+              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+              {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+              {proc_lib,init_p_do_apply,3,
+                        [{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::17:38:46 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarith,[{file_parser,update_object,3,
+                           [{file,"src/file_parser.erl"},{line,259}]},
+              {file_parser,range_object,6,
+                           [{file,"src/file_parser.erl"},{line,253}]},
+              {file_parser,parser_object,1,
+                           [{file,"src/file_parser.erl"},{line,231}]},
+              {file_parser,parser_file,2,
+                           [{file,"src/file_parser.erl"},{line,79}]},
+              {file_parser,handle_info,2,
+                           [{file,"src/file_parser.erl"},{line,50}]},
+              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+              {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+              {proc_lib,init_p_do_apply,3,
+                        [{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 15-Mar-2016::17:38:46 ===
+** Generic server file_parser terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {badarith,[{file_parser,update_object,3,
+                           [{file,"src/file_parser.erl"},{line,259}]},
+              {file_parser,range_object,6,
+                           [{file,"src/file_parser.erl"},{line,253}]},
+              {file_parser,parser_object,1,
+                           [{file,"src/file_parser.erl"},{line,231}]},
+              {file_parser,parser_file,2,
+                           [{file,"src/file_parser.erl"},{line,79}]},
+              {file_parser,handle_info,2,
+                           [{file,"src/file_parser.erl"},{line,50}]},
+              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+              {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+              {proc_lib,init_p_do_apply,3,
+                        [{file,"proc_lib.erl"},{line,240}]}]}
+
+=INFO REPORT==== 15-Mar-2016::17:38:46 ===
+    application: maparser
+    exited: shutdown
+    type: temporary

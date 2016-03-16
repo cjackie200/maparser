@@ -1,0 +1,20 @@
+
+=ERROR REPORT==== 15-Mar-2016::18:04:19 ===
+** Generic server db_mysql terminating 
+** Last message in was start
+** When Server state == []
+** Reason for termination == 
+** {{badmatch,undefined},
+    [{util,id_to_point,1,[{file,"src/misc/util.erl"},{line,75}]},
+     {db_mysql,int2point,1,[{file,"src/db_mysql.erl"},{line,123}]},
+     {db_mysql,make_field_string,2,[{file,"src/db_mysql.erl"},{line,119}]},
+     {db_mysql,make_replace_mysql,1,[{file,"src/db_mysql.erl"},{line,102}]},
+     {db_mysql,update_mysql,1,[{file,"src/db_mysql.erl"},{line,89}]},
+     {db_mysql,handle_info,2,[{file,"src/db_mysql.erl"},{line,61}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]}]}
+
+=INFO REPORT==== 15-Mar-2016::18:04:19 ===
+    application: maparser
+    exited: shutdown
+    type: temporary
