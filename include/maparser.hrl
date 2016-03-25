@@ -6,6 +6,7 @@
 
 -define(ETS_CONFIG, ets_config).
 -define(ETS_BUFF, ets_buff).
+-define(ETS_MAP, ets_map).
 
 -record(buff, {
     terrain = "0",

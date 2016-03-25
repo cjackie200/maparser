@@ -56,11 +56,11 @@ handle_call(_Info, _From, Status) ->
 handle_cast(_Info, Status) ->
     {noreply, Status}.
 
-handle_info(start, Status) ->
+handle_info({start, Table}, Status) ->
     io:format("write data start ... ~p~n", [util:formated_timestamp()]),
-    write_data(),
+    write_data(Table),
     io:format("write data ok ... ~p~n", [util:formated_timestamp()]),
-    Size = ets:info(?ETS_BUFF, size),
+    Size = ets:info(Table, size),
     io:format("write data end. total:~p~n", [Size]),
     {noreply, Status};
 
@@ -72,15 +72,15 @@ execute_sql(Query) ->
     emysql:execute(?MAPARSER_EMYSQL, Query).
 
 
-write_data() ->
-    case ets:info(?ETS_BUFF, size) of
+write_data(Table) ->
+    case ets:info(Table, size) of
     0 ->
         io:format("table size: 0 !~n");
     undefined ->
         io:format("table undefined!~n");
     _ ->
-        Map = ets:tab2list(?ETS_BUFF),
-        io:format("~p table len ~p~n", [?ETS_BUFF, length(Map)]),
+        Map = ets:tab2list(Table),
+        io:format("~p table len ~p~n", [Table, length(Map)]),
         update_mysql(Map)
     end.
 

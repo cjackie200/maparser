@@ -73,8 +73,10 @@ parser_file(Fid) ->
 
 parser_file(eof, Fid) ->
     {ok, FileName} = file:pid2name(Fid),
+    io:format("mag ~pX map ! ~n", [util:get_config(map_mag)]),
+    mag_table(),
     io:format("file: ~p  parser ok!~n", [FileName]),
-    db_mysql ! start;
+    db_mysql ! {start, ?ETS_MAP};
 
 parser_file({ok, Data}, Fid) ->
     parser_data(Data, Fid),
@@ -271,11 +273,25 @@ get_table_value(Key) ->
     end.
 
 insert_table_value(Pos, Buff) ->
+    ets:insert(?ETS_BUFF, {Pos, Buff}).
+
+mag_table() ->
     Mag = util:get_config(map_mag),
     Width = util:get_config(width),
-    R = (Pos div Width)*2,
-    C = (Pos rem Width)*2,
-    range_mag(Buff, R, C, Width*Mag, Mag-1, Mag-1, Mag-1).
+    Fun = fun ({Pos, Buff}, _) ->
+        mag_table_value(Pos, Buff, Mag, Width)
+    end,
+    ets:foldl(Fun, ok, ?ETS_BUFF).
+
+mag_table_value(Pos, Buff, Mag, Width) ->
+    R = (Pos div Width)*Mag,
+    C = (Pos rem Width)*Mag,
+    NewBuff = Buff#buff{
+        object = "0"
+    },
+    range_mag(NewBuff, R, C, Width*Mag, Mag-1, Mag-1, Mag-1),
+    Key = R*Width*Mag+C,
+    ets:insert(?ETS_MAP, {Key, Buff}).
 
 range_mag(_Buff,  _R, _C, _Wmag, -1, _Width, _Pos) ->
     ok;
@@ -286,7 +302,5 @@ range_mag(Buff,  R, C, Wmag, Height, Width, -1) ->
 
 range_mag(Buff,  R, C, Wmag, Height, Width, Pos) ->
     Key = (R + Height)*Wmag+C+Pos,
-    ets:insert(?ETS_BUFF, {Key, Buff}),
+    ets:insert(?ETS_MAP, {Key, Buff}),
     range_mag(Buff,  R, C, Wmag, Height, Width, Pos - 1).
-
-

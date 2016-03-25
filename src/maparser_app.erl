@@ -20,8 +20,9 @@ stop(_) ->
 
 
 init_ets() ->
-    ets:new(?ETS_CONFIG, [set, public, {keypos, 1}, named_table, {read_concurrency, true}]),
-    ets:new(?ETS_BUFF, [set, public, {keypos, 1}, named_table, {read_concurrency, true}]),
+    ets:new(?ETS_CONFIG, [set, public, {keypos, 1}, named_table]),
+    ets:new(?ETS_BUFF, [set, public, {keypos, 1}, named_table]),
+    ets:new(?ETS_MAP, [set, public, {keypos, 1}, named_table]),
     ok.
 
 init_config() ->
